@@ -1,5 +1,6 @@
 <script>
 	import { artists } from '../../artists.js';
+	import Card from '$lib/components/Card.svelte';
 	export let data;
 
 	let vals;
@@ -16,12 +17,25 @@
 	<title>EAF 2024 | {data.medium}</title>
 </svelte:head>
 
-<h2>#{data.medium}</h2>
+<h2 class="page_title">#{data.medium}</h2>
 <div class="container">
 	{#each matched as vals, i}
-		<div class="card">
-			<a href={vals.Website} target="_blank"><h3>{vals['Business Name']}</h3></a>
-			<p>by {vals['First Name']} {vals['Last Name']}</p>
-		</div>
+		<Card
+			website={vals.Website}
+			businessName={vals['Business Name']}
+			firstName={vals['First Name']}
+			lastName={vals['Last Name']}
+			medium={vals.Medium}
+		/>
 	{/each}
 </div>
+
+<style>
+	.page_title {
+		text-align: center;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+</style>

@@ -12,9 +12,7 @@
 
 <style>
 	.container {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		padding: 2rem;
-		margin: 0 auto;
+		width: 80%;
+		margin: 2rem auto;
 	}
 </style>
