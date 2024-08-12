@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 	--clr-black: #000;
 	--clr-white: #fff;
+	--clr-purple: hsla(249, 63%, 30%, 1);
+	--clr-white: hsla(180, 84%, 67%, 1);
+
+	--font-text: 'Montserrat', sans-serif;
+	--font-accent: 'Dosis', 'Courier New', monospace;
 }
 
 *,
@@ -13,4 +20,9 @@
 
 body {
 	color: var(--clr-black);
+	font-family: var(--font-text);
+}
+
+a {
+	font-family: var(--font-accent);
 }

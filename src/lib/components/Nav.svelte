@@ -10,7 +10,7 @@
 		},
 		{
 			title: 'Eagan Art Festival',
-			path: '/'
+			path: 'https://www.eaganartfestival.org/'
 		}
 	];
 </script>

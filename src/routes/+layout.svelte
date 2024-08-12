@@ -5,7 +5,16 @@
 </script>
 
 <Header />
-<div class="main">
+<div class="container">
 	<slot />
 </div>
 <Footer />
+
+<style>
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 2rem;
+		margin: 0 auto;
+	}
+</style>
