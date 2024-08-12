@@ -20,3 +20,13 @@
 		<a href={path}>{title}</a>
 	{/each}
 </nav>
+
+<style>
+	nav a {
+		color: var(--clr-white);
+		margin: 0 1rem;
+	}
+	nav a:hover {
+		color: var(--clr-blue);
+	}
+</style>
