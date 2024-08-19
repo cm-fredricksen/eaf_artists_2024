@@ -5,6 +5,10 @@
 	// console.log(data);
 </script>
 
+<svelte:head>
+	<title>EAF 2024 | Artists</title>
+</svelte:head>
+
 <div class="container">
 	{#each data.summaries as { website, businessName, firstName, lastName, medium }}
 		<Card {website} {firstName} {lastName} {medium} {businessName} />
