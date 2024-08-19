@@ -1,5 +1,6 @@
 <script>
 	import Card from '$lib/components/Card.svelte';
+	import Cloud from '$lib/components/Cloud.svelte';
 
 	export let data;
 	// console.log(data);
@@ -8,6 +9,8 @@
 <svelte:head>
 	<title>EAF 2024 | Artists</title>
 </svelte:head>
+
+<Cloud />
 
 <div class="container">
 	{#each data.summaries as { website, businessName, firstName, lastName, medium }}
