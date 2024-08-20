@@ -1,11 +1,7 @@
 <script>
 	const links = [
 		{
-			title: 'Home',
-			path: '/'
-		},
-		{
-			title: 'Dakota Center for the Arts',
+			title: 'Artists',
 			path: '/'
 		},
 		{

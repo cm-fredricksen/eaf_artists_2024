@@ -1,5 +1,8 @@
 <footer>
-	<p>&copy; {new Date().getFullYear()} <a href="/">DCA</a></p>
+	<p>
+		&copy; {new Date().getFullYear()}
+		<a href="https://www.eaganartfestival.org/">Eagan Art Festival</a>
+	</p>
 </footer>
 
 <style>
